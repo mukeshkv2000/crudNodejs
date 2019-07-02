@@ -1,0 +1,33 @@
+<h3> {{viewTitle}}</h3>
+<section>
+    <form autocomplete="off" action="/employee" method="POST">
+    <input type="hidden" name="_id" value ="{{employee.id}}">
+        <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" class="form-control" name="fullname" value="{{employee.fullname}}" placeholder="Enter full name" value=>
+
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="number" class="form-control" name="phone" value="{{employee.phone}}" placeholder="Enter phone">
+
+        </div>
+        <div class="form-group">
+            <label for="trade">Trade </label>
+            <input type="text" class="form-control" name="trade" value="{{employee.trade}}" placeholder="Enter Employers trade">
+
+        </div>
+        <div class="form-group">
+            <label for="city">city </label>
+            <input type="text" class="form-control" name="city" value="{{employee.city}}" placeholder="City">
+
+
+        </div>
+        <div class="form-group"> <button type="submit" class="btn btn-info"> <i class="fa fa-database"></i>
+                Submit</button>
+            <a class="btn  btn-success" href="/employee/list">
+                <i class="fa  fa-file"> View All </i>
+
+            </a></div>
+    </form>
+</section>
